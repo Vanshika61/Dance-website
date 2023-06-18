@@ -1,0 +1,30 @@
+//- index.pug
+doctype html
+html
+  head
+    title Vanshika dance academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+      ul 
+        li #[a(href="/") Home ]
+        li #[a(href="/") About ]
+        li #[a(href="/") Services ]
+        li #[a(href="/") Class Info] 
+        li #[a(href="/") Contact us]
+    
+    section#introSection 
+      div Welcome to Vanshika's Dance Academy 
+      div.small Eat Sleep Dance Repeat 
+
+    section#missionSection 
+      h2 Our Mission
+
+    section#sponsorsSection 
+      h2 Our Sponsors
+    
+    footer#footer 
+      | our footer here
+    script
+      include ../static/index.js
