@@ -17,7 +17,12 @@ app.set('views', path.join(__dirname, 'views'));        // Set the views directo
 // ENDPOINTS CONFIGURATION
 app.get('/', (req, res) => {
     const params = {}
-    res.status(200).render('index', params);
+    res.status(200).render('home', params);
+});
+
+app.get('/contact', (req, res) => {
+    const params = {}
+    res.status(200).render('contact', params);
 });
 
 
